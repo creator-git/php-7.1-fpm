@@ -1,4 +1,4 @@
-FROM php:5.4-fpm
+FROM nsign/php:5.4-fpm
 
 RUN apt-get update && apt-get -y install nano mc wget openssl git
 
