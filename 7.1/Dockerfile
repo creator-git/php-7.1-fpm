@@ -1,6 +1,6 @@
 FROM php:7.1-fpm
 
-RUN apt-get update && apt-get -y install nano mc wget openssl git
+RUN apt-get update && apt-get -y install nano mc wget openssl git sshpass
 
 RUN docker-php-ext-install bcmath
 RUN docker-php-ext-enable bcmath
