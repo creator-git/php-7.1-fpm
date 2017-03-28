@@ -79,9 +79,6 @@ RUN apt-get update \
     && docker-php-ext-install pcntl \
     && docker-php-ext-enable pcntl \
 
-    && pecl install https://xdebug.org/files/xdebug-2.4.1.tgz \
-    && docker-php-ext-enable xdebug \
-
     && apt-get clean && apt-get autoclean && apt-get autoremove --purge -y
 
 EXPOSE 9000
