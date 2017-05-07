@@ -1,0 +1,2 @@
+deb http://mirror.mephi.ru/debian-archive/debian/ squeeze main contrib non-free
+deb http://mirror.mephi.ru/debian-archive/debian/ squeeze-lts main contrib non-free
