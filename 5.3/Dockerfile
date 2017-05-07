@@ -1,4 +1,4 @@
-FROM debian:squeeze
+FROM nsign/debian-docker:squeeze
 
 COPY ./sources.list /etc/apt/sources.list
 
