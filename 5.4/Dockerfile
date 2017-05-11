@@ -83,4 +83,10 @@ RUN apt-get update \
 
 EXPOSE 9000
 
-CMD ["php-fpm"]
+COPY ./init.sh /init.sh
+
+RUN chmod +x /init.sh
+
+COPY ./supervisor/web-gui.conf /etc/supervisor/conf.d/web-gui.conf
+
+CMD ["/init.sh"]
