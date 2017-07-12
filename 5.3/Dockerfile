@@ -19,6 +19,6 @@ RUN a2enmod rewrite expires
 EXPOSE 80
 EXPOSE 443
 
-RUN usermod -u 1000 www-data
+# RUN usermod -u 1000 www-data
 
 CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
